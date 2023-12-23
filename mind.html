@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIND FLAYER</title>
+    <link rel="stylesheet" href="mind.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main1{
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .con{
+            width: 25vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+        .row1{
+            height: 33%;
+            display: flex;
+        }
+        .row2{
+            height: 33%;
+            display: flex;
+        }
+        .row3{
+            height: 34%;
+            display: flex;
+        }
+
+        .col1{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+           color: transparent;
+        }
+        .col2{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+           color: transparent;
+        }
+        .col3{
+            width: 34%;
+            height: 100%;
+            border: 2px solid #000000;
+           color: transparent;
+        }
+        .col4{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+           color: transparent;
+        }
+        .col5{
+            width: 33%;
+            height: 100%;
+            border: 2px solid #000000;
+           color: transparent;
+        }
+        .col6{
+            width: 34%;
+            height: 100%;
+            border: 2px solid black;
+            color: transparent;;
+        }
+        .col7{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+           color: transparent;
+        }
+        .col8{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+           color: transparent;
+        }
+        .col9{
+            width: 34%;
+            height: 100%;
+            border: 2px solid black;
+           color: transparent;
+        }
+
+        .col{
+            transition: 0.1s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7em;
+            font-family:sans-serif;
+        }
+        .col:hover{
+            background-color: rgb(231, 244, 248);
+        }
+        .main2{
+            display: flex;
+            width: 100vw;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #score{
+            font-size: 2vw;
+            font-family:cursive;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="con">
+            <div class="row1">
+                <div id="op1" class="col col1 lb tb rb"></div>
+                <div id="op2" class="col col2 tb rb"></div>
+                <div  id="op3" class="col col3 tb rb"></div>
+            </div>
+            <div class="row2">
+                <div  id="op4" class="col col4 lb bb rb"></div>
+                <div  id="op5" class="col col5 bb rb"></div>
+                <div  id="op6" class="col col6 rb bb"></div>
+            </div>
+            <div class="row3">
+                <div  id="op7" class="col col7 lb bb rb"></div>
+                <div  id="op8" class="col col8 bb rb"></div>
+                <div  id="op9" class="col col9 bb rb"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <p id="score">SCORE : - 0</p>
+    </div>
+    
+   
+    <script src="mind.js"></script>
+</body>
+</html>
